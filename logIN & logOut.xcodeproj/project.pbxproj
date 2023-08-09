@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		E771FDDE2A25212A0025A87F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771FDDD2A25212A0025A87F /* AppDelegate.swift */; };
 		E771FDE02A25212A0025A87F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771FDDF2A25212A0025A87F /* SceneDelegate.swift */; };
-		E771FDE22A25212A0025A87F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771FDE12A25212A0025A87F /* ViewController.swift */; };
+		E771FDE22A25212A0025A87F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771FDE12A25212A0025A87F /* LoginViewController.swift */; };
 		E771FDE52A25212A0025A87F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E771FDE32A25212A0025A87F /* Main.storyboard */; };
-		E771FDE72A25212C0025A87F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E771FDE62A25212C0025A87F /* Assets.xcassets */; };
 		E771FDEA2A25212C0025A87F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E771FDE82A25212C0025A87F /* LaunchScreen.storyboard */; };
+		E771FDF22A25236F0025A87F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771FDF12A25236F0025A87F /* WelcomeViewController.swift */; };
+		E78F88682A293CC500A855CE /* WithButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78F88672A293CC500A855CE /* WithButtonViewController.swift */; };
+		E78F886B2A293CE600A855CE /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78F886A2A293CE600A855CE /* MoreInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E771FDDA2A25212A0025A87F /* logIN & logOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "logIN & logOut.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E771FDDD2A25212A0025A87F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E771FDDF2A25212A0025A87F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E771FDE12A25212A0025A87F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E771FDE12A25212A0025A87F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E771FDE42A25212A0025A87F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E771FDE62A25212C0025A87F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E771FDE92A25212C0025A87F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E771FDEB2A25212C0025A87F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E771FDF12A25236F0025A87F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E78F88672A293CC500A855CE /* WithButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithButtonViewController.swift; sourceTree = "<group>"; };
+		E78F886A2A293CE600A855CE /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,31 @@
 			children = (
 				E771FDDD2A25212A0025A87F /* AppDelegate.swift */,
 				E771FDDF2A25212A0025A87F /* SceneDelegate.swift */,
-				E771FDE12A25212A0025A87F /* ViewController.swift */,
-				E771FDE32A25212A0025A87F /* Main.storyboard */,
-				E771FDE62A25212C0025A87F /* Assets.xcassets */,
-				E771FDE82A25212C0025A87F /* LaunchScreen.storyboard */,
+				E78F88642A293C5A00A855CE /* ViewControllers */,
+				E78F88662A293C7A00A855CE /* Screens */,
 				E771FDEB2A25212C0025A87F /* Info.plist */,
 			);
 			path = "logIN & logOut";
+			sourceTree = "<group>";
+		};
+		E78F88642A293C5A00A855CE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E771FDE12A25212A0025A87F /* LoginViewController.swift */,
+				E771FDF12A25236F0025A87F /* WelcomeViewController.swift */,
+				E78F88672A293CC500A855CE /* WithButtonViewController.swift */,
+				E78F886A2A293CE600A855CE /* MoreInfoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E78F88662A293C7A00A855CE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E771FDE32A25212A0025A87F /* Main.storyboard */,
+				E771FDE82A25212C0025A87F /* LaunchScreen.storyboard */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +148,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E771FDEA2A25212C0025A87F /* LaunchScreen.storyboard in Resources */,
-				E771FDE72A25212C0025A87F /* Assets.xcassets in Resources */,
 				E771FDE52A25212A0025A87F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E771FDE22A25212A0025A87F /* ViewController.swift in Sources */,
+				E78F88682A293CC500A855CE /* WithButtonViewController.swift in Sources */,
+				E771FDE22A25212A0025A87F /* LoginViewController.swift in Sources */,
+				E771FDF22A25236F0025A87F /* WelcomeViewController.swift in Sources */,
+				E78F886B2A293CE600A855CE /* MoreInfoViewController.swift in Sources */,
 				E771FDDE2A25212A0025A87F /* AppDelegate.swift in Sources */,
 				E771FDE02A25212A0025A87F /* SceneDelegate.swift in Sources */,
 			);
